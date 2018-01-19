@@ -42,6 +42,7 @@ public class UserController {
         if(response.isSuccess()){
 //            session.setAttribute(Const.CURRENT_USER,response.getData());
             RedisPoolUtil.setEx("keyex222","valueex",60*10);
+            RedisPoolUtil.set("fuck","fuck3333");
             RedisPoolUtil.setEx(session.getId(), JsonUtil.obj2String(response.getData()),Const.RedisCacheExtime.REDIS_SESSION_EXTIME);
         }
         return response;
