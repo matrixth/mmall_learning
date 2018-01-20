@@ -5,8 +5,6 @@ import com.mmall.common.ResponseCode;
 import com.mmall.common.ServerResponse;
 import com.mmall.pojo.User;
 import com.mmall.service.IUserService;
-import com.mmall.util.JsonUtil;
-import com.mmall.util.RedisPoolUtil;
 import com.sun.corba.se.spi.activation.Server;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
